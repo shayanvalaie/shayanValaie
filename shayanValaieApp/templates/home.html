@@ -1,0 +1,42 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+
+
+
+<!-- 
+<div id="open" class="center button2">
+
+</div> -->
+<!-- 
+<div class="modal-container" id="modal_container">
+    <div class="modal">
+        <h1>Modals are cool</h1>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quasi unde, vel eum placeat
+            voluptas
+            nihil, ullam voluptatem expedita et aperiam quo reiciendis laborum aspernatur asperiores eligendi magni
+            minus reprehenderit?
+        </p>
+        <button id="close">Close me</button>
+    </div>
+</div> -->
+
+
+<div class="socials socials-size">
+    <a style="margin-right: 100px;" target="_blank"
+        href="https://open.spotify.com/artist/0pEh9sIaZNsmCSnroCRBkO?si=4cEJzDXySlmwMW5WO4VVbw&dl_branch=1"><img
+            class="socials-hover" src="{% static 'images/spotify-512.png' %}" /></a>
+    <a style="margin-right: 100px;" target="_blank" href="https://www.instagram.com/shayanvalaie/"><img
+            class="socials-hover" src=" {% static 'images/instagram-4-512.png' %}" /></a>
+    <a href="https://music.apple.com/us/artist/shayan-valaie/1430168840" target="_blank"><img class="socials-hover"
+            src=" {% static 'images/apple-512.png' %}" /></a>
+</div>
+
+
+
+
+<script src="{% static 'js/home.js' %}"></script>
+
+
+{% endblock content %}

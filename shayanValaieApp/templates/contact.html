@@ -1,0 +1,56 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+
+
+<!-- <div class="container p-2">
+
+   
+
+    <form action="" method="POST">
+
+        {% csrf_token %}
+        <h1 class="text-light font-weight-bold">
+
+            Contact
+        </h1>
+        <div class="form-control-lg no-bg">
+            <input type="text" name="full-name" placeholder="Full Name">
+        </div>
+        <div class="form-control-lg no-bg">
+
+            <input type="text" name="email" placeholder="Email">
+        </div>
+        <div class="form-control-lg no-bg">
+
+            <input type="text" name="subject" placeholder="Subject">
+        </div>
+        <div class="form-control-lg no-bg">
+
+            <textarea placeholder="Please type your message here..." name="message" id="" cols="30"
+                rows="10"></textarea>
+        </div>
+        <div class="form-control-lg no-bg">
+            <input type="Submit" class="btn btn-outline-danger" value="Send Message">
+        </div>
+</div>
+</form>
+</div> -->
+
+
+
+
+
+<form action="" method="POST" id="form" class="topBefore">
+    {% csrf_token %}
+
+    <input id="name" type="text" placeholder="FULL NAME" name="full-name">
+    <input id="email" type="text" placeholder="E-MAIL" name="email">
+    <input id="email" type="text" placeholder="SUBJECT" name="subject">
+    <textarea id="message" type="text" placeholder="TYPE YOUR MESSAGE HERE..." name="message"></textarea>
+    <input id="submit" type="submit" value="SEND">
+
+</form>
+
+
+{% endblock content %}

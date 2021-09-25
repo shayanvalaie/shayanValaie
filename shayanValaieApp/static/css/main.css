@@ -1,0 +1,505 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: hsl(0, 0%, 30%);
+  font-family: "Maven Pro";
+  font-size: calc(1.5vw + 1rem);
+}
+
+form {
+  font-family: "Maven Pro" !important;
+  font-size: calc(1.5vw + 1rem) !important;
+}
+
+p {
+  font-family: "Maven Pro";
+  font-size: calc(1vw + 0.5rem);
+}
+
+/* body {
+  background-image: url("https://images.pexels.com/photos/1040499/pexels-photo-1040499.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+} */
+
+body,
+html {
+  height: 100vh;
+  width: 100vw;
+  padding-bottom: 15px;
+
+  background-color: black;
+}
+a {
+  /* text-shadow: 2px 2px #615f5f; */
+  letter-spacing: 2px;
+  font-family: "Maven Pro";
+  text-decoration: none !important;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("https://cdn.pixabay.com/photo/2015/03/26/10/36/room-691649_1280.jpg");
+  background-color: black;
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* NAV BAR */
+nav {
+  background: none;
+  height: 80px;
+  width: 100%;
+}
+
+.logo {
+  width: 250px;
+  height: auto;
+  padding: 25px;
+}
+#no-hover:hover {
+  background: none !important;
+}
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  background: -webkit-linear-gradient(#ffffff, #7d6666);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+.thankyou-color {
+  background: -webkit-linear-gradient(#ffffff, #7d6666);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-style: italic;
+  font-size: 20px;
+}
+
+.bar-color {
+  background: -webkit-linear-gradient(#ffffff, #aca4a4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+a:hover {
+  text-decoration: none !important;
+  color: white !important;
+}
+
+.bars {
+  color: white;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+.no-bg {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+/* SOCIALS  */
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 200px;
+}
+
+.socials-space {
+  margin-right: 75px;
+}
+.socials-size {
+  max-width: 100%;
+  height: auto;
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.socials-hover {
+  opacity: 0.9;
+}
+
+.socials-hover:hover {
+  opacity: 0.3;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* Modal CSS */
+
+/* .modal-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  pointer-events: none;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+.modal-container.show {
+  pointer-events: auto;
+  opacity: 1 !important;
+}
+
+.modal {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  width: 600px;
+  max-width: 100%;
+  text-align: center;
+}
+
+.modal h1 {
+  margin: 0;
+}
+
+.modal p {
+  font-size: 14px;
+  opacity: 0.7;
+} */
+
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
+  color: #bbb5af;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::-moz-placeholder,
+textarea:focus::-moz-placeholder {
+  color: #bbb5af;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::placeholder,
+textarea::focus:placeholder {
+  color: #bbb5af;
+}
+
+input::-ms-placeholder,
+textarea::-ms-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::-ms-placeholder,
+textarea:focus::-ms-placeholder {
+  color: #bbb5af;
+}
+
+/* on hover placeholder */
+
+input:hover::-webkit-input-placeholder,
+textarea:hover::-webkit-input-placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-webkit-input-placeholder,
+textarea:hover:focus::-webkit-input-placeholder {
+  color: #cbc6c1;
+}
+
+input:hover::-moz-placeholder,
+textarea:hover::-moz-placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-moz-placeholder,
+textarea:hover:focus::-moz-placeholder {
+  color: #cbc6c1;
+}
+
+input:hover::placeholder,
+textarea:hover::placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::placeholder,
+textarea:hover:focus::placeholder {
+  color: #cbc6c1;
+}
+
+input:hover::placeholder,
+textarea:hover::placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-ms-placeholder,
+textarea:hover::focus:-ms-placeholder {
+  color: #cbc6c1;
+}
+
+header {
+  position: relative;
+  margin: 100px 0 25px 0;
+  font-size: 2.3em;
+  text-align: center;
+  letter-spacing: 7px;
+}
+
+#form {
+  position: relative !important;
+  width: 500px !important;
+  margin: 50px auto 100px auto !important;
+}
+
+input {
+  font-size: 0.875em;
+  width: 470px;
+  height: 50px;
+  padding: 0px 15px 0px 15px;
+
+  background: transparent;
+  outline: none;
+  color: #726659;
+
+  border: solid 1px #b3aca7;
+  border-bottom: none;
+
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+input:hover {
+  background: #b3aca7;
+  color: #e2dedb;
+}
+
+textarea {
+  width: 470px;
+  max-width: 470px;
+  height: 110px;
+  max-height: 110px;
+  padding: 15px;
+
+  background: transparent;
+  outline: none;
+
+  color: #726659;
+  font-family: "Lato", sans-serif;
+  font-size: 0.875em;
+
+  border: solid 1px #b3aca7;
+
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+textarea:hover {
+  background: #b3aca7;
+  color: #e2dedb;
+}
+
+#submit {
+  padding: 0;
+  margin: -5px 0px 0px 0px;
+
+  font-family: "Lato", sans-serif;
+  font-size: 0.875em;
+  color: #b3aca7;
+
+  outline: none;
+  cursor: pointer;
+
+  border: solid 1px #b3aca7;
+}
+
+#submit:hover {
+  color: #e2dedb;
+}
+
+/* PRESS */
+
+
+
+
+.card-body {
+  margin-top: 40px;
+  border-radius: 12px;
+
+  width: 400px;
+  background: white !important;
+
+  font-family: roboto;
+  text-align: center;
+  padding: 0px !important;
+  transition: 1s ease;
+  cursor: pointer;
+  margin: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.card-image {
+  grid-area: image;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.blog-shadow-dreamy {
+  box-shadow: 25px 10px 50px #1b1c1b, -25px 45px 50px #2d302f;
+}
+
+.card-body:hover {
+  opacity: 1;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+}
+
+/*  ================  */
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1000px) {
+  label.logo {
+    padding-left: 100px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+
+  .card-body {
+    width: 300px;
+    height: auto;
+  }
+}
+
+@media (max-width: 858px) {
+  .card-body {
+    width: 200px;
+    height: auto;
+  }
+  label.logo {
+    display: none;
+  }
+
+  .checkbtn {
+    display: block;
+  }
+
+  ul {
+    opacity: 0.8;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgb(1 1 1);
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 16px;
+    font-family: "Maven Pro";
+  }
+  a:hover,
+  a.active {
+    background: none;
+    color: lightgrey;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+
+@media (max-width: 350px) {
+  .logo {
+    width: 150px;
+    height: auto;
+  }
+
+  .card-body {
+    width: 150px;
+    height: auto;
+}
