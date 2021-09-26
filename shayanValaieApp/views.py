@@ -1,4 +1,4 @@
-from django.shortcuts import render, HttpResponse
+from django.shortcuts import redirect, render, HttpResponse
 from django.core.mail import send_mail
 
 
@@ -17,7 +17,7 @@ def thankyou(request):
     return render(request, "thankyou.html")
 
 
-def contact(request):
+def send_form(request):
     if request.method == "POST":
         name = request.POST.get('full-name')
         email = request.POST.get('email')
@@ -38,4 +38,9 @@ def contact(request):
 
         '''.format(data['message'], data['email'])
         send_mail(data["subject"], message, '', ['svalaiemusic@gmail.com'])
-    return render(request, "contact.html", {})
+    return redirect("/contact/thankyou", {})
+
+
+def contact(request):
+
+    return render(request, "contact.html")
